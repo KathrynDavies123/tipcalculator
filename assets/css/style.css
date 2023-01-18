@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c5e4e7;
+  gap: 40px;
+}
+
+header {
+  margin-top: 50px;
+}
+
+main {
+  background: #ffffff;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px 25px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+}
+
+.label {
+  color: #5e7a7d;
+}
+
+input[type="number"] {
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  height: 48px;
+}
+
+.largeinput {
+  padding: 16px 18px;
+  text-align: right;
+  margin-bottom: 32px;
+  margin-top: 6px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #00474b;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+
+#billamount {
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 20px;
+}
+
+#numberofpeople {
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 20px;
+}
+
+.radioscontainer {
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+
+input[type="radio"] {
+  appearance: none;
+}
+
+.totalscontainer {
+  background: #00474b;
+  border-radius: 15px;
+  padding: 37px 22px 24px 24px;
+}
+
+.totalscontainer > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 13px;
+  color: #7f9d9f;
+}
+
+.totalclass {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: right;
+  letter-spacing: -0.666667px;
+  color: #26c2ae;
+}
+
+button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #00474b;
+  background: #26c2ae;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  font-family: "Space Mono", monospace;
+  margin-top: 12px;
+}

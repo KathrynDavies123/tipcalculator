@@ -14,8 +14,8 @@ let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;
   let totalamount = billamount / numberofpeople + tipamount;
   if (numberofpeople !== 0) {
-    tipamountoutput.innerText = tipamount;
-    totalamountoutput.innerText = totalamount;
+    tipamountoutput.innerText = `$${tipamount}`;
+    totalamountoutput.innerText = `$${totalamount}`;
   }
   else {
     tipamountoutput.innerText = 0;
