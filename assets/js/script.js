@@ -10,16 +10,21 @@ let customamountinput = document.querySelector("#customamountinput");
 let tipamountoutput = document.querySelector("#tipamount");
 let totalamountoutput = document.querySelector("#totalamount");
 
+let zeroerrormsg = document.querySelector("#zeroerror");
+
 let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;
   let totalamount = billamount / numberofpeople + tipamount;
   if (numberofpeople !== 0) {
-    tipamountoutput.innerText = `$${tipamount}`;
-    totalamountoutput.innerText = `$${totalamount}`;
-  }
-  else {
+    tipamountoutput.innerText = `$${tipamount.toFixed(2)}`;
+    totalamountoutput.innerText = `$${totalamount.toFixed(2)}`;
+    numberofpeopleinput.classList.remove("zero");
+    zeroerrormsg.style.display = "none";
+  } else {
     tipamountoutput.innerText = 0;
     totalamountoutput.innerText = 0;
+    numberofpeopleinput.classList.add("zero");
+    zeroerrormsg.style.display = "block";
   }
 };
 
@@ -31,8 +36,7 @@ billamountinput.addEventListener("input", function () {
 numberofpeopleinput.addEventListener("input", function () {
   if (numberofpeopleinput.value !== "") {
     numberofpeople = numberofpeopleinput.value;
-  }
-  else {
+  } else {
     numberofpeople = 0;
   }
   calculateTotal();

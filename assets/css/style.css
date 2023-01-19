@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 html {
   font-family: "Space Mono", monospace;
 }
@@ -29,6 +34,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 32px 24px;
+  width: 375px;
 }
 
 form {
@@ -44,8 +50,17 @@ form {
 input[type="number"] {
   background: #f3f9fa;
   border-radius: 5px;
-  border: none;
   height: 48px;
+  border: 2px solid #f3f9fa;
+}
+
+input[type="number"]:hover {
+  border: 2px solid #26c2ae;
+  cursor: pointer;
+}
+
+input[type="number"]:focus {
+  border: 2px solid #26c2ae;
 }
 
 .largeinput {
@@ -74,13 +89,71 @@ input[type="number"] {
   background-position-x: 20px;
 }
 
+.peoplelabel {
+  display:flex;
+  justify-content: space-between;
+}
+
+#zeroerror {
+color: #E17457;
+display:none;
+}
+
+.zero {
+  border: 2px solid #E17052 !important;
+}
+
 .radioscontainer {
   margin-bottom: 32px;
   margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
 }
 
 input[type="radio"] {
   appearance: none;
+  display: none;
+}
+
+.radioscontainer label {
+  background: #00474b;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radioscontainer label:hover {
+  cursor: pointer;
+  background: #9FE8DF;
+  color: #00474B;
+}
+
+input[type="radio"]:checked + label {
+  background: #26c2ae;
+  color: #00474b;
+}
+
+#customamountinput {
+  width: 146px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: "Space Mono", monospace;
+  text-align: right;
+  color: #00474B;
+  padding: 6px 17px 6px 0;
+}
+
+#customamountinput::placeholder {
+  color: #547878;
 }
 
 .totalscontainer {
