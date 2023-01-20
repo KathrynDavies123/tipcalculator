@@ -12,6 +12,8 @@ let totalamountoutput = document.querySelector("#totalamount");
 
 let zeroerrormsg = document.querySelector("#zeroerror");
 
+let resetbutton = document.querySelector("#resetbutton");
+
 let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;
   let totalamount = billamount / numberofpeople + tipamount;
@@ -26,6 +28,7 @@ let calculateTotal = () => {
     numberofpeopleinput.classList.add("zero");
     zeroerrormsg.style.display = "block";
   }
+  resetbutton.disabled = false;
 };
 
 billamountinput.addEventListener("input", function () {
@@ -59,8 +62,6 @@ customamountinput.addEventListener("input", function () {
   }
   calculateTotal();
 });
-
-let resetbutton = document.querySelector("#resetbutton");
 
 resetbutton.addEventListener("click", function () {
   location.reload();
