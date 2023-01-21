@@ -5,14 +5,14 @@ let numberofpeople = 0;
 let billamountinput = document.querySelector("#billamount");
 let numberofpeopleinput = document.querySelector("#numberofpeople");
 let radios = document.querySelectorAll("input[type=radio]");
-let customamountinput = document.querySelector("#customamountinput");
+let customamountinput = document.querySelector(".customamountinput");
 
-let tipamountoutput = document.querySelector("#tipamount");
-let totalamountoutput = document.querySelector("#totalamount");
+let tipamountoutput = document.querySelector(".tipamount");
+let totalamountoutput = document.querySelector(".totalamount");
 
-let zeroerrormsg = document.querySelector("#zeroerror");
+let zeroerrormsg = document.querySelector(".zeroerror");
 
-let resetbutton = document.querySelector("#resetbutton");
+let resetbutton = document.querySelector(".resetbutton");
 
 let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;

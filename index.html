@@ -42,9 +42,9 @@
           <label for="twentyfivepercent">25%</label>
           <input type="radio" id="fiftypercent" name="tipradios" value="0.5" />
           <label for="fiftypercent">50%</label>
-          <input type="number" placeholder="Custom" id="customamountinput" />
+          <input type="number" placeholder="Custom" class="customamountinput" />
         </div>
-        <div class="peoplelabel"><p class="label">Number of People</p><p id="zeroerror">Can't be zero</p></div>
+        <div class="peoplelabel"><p class="label">Number of People</p><p class="zeroerror">Can't be zero</p></div>
         <input
           type="number"
           placeholder="0"
@@ -58,16 +58,16 @@
             <h2>Tip Amount</h2>
             <h3>/person</h3>
           </div>
-          <p id="tipamount" class="totalclass">$0</p>
+          <p class="totalclass tipamount">$0</p>
         </div>
         <div>
           <div>
             <h2>Total</h2>
             <h3>/person</h3>
           </div>
-          <p id="totalamount" class="totalclass">$0</p>
+          <p class="totalclass totalamount">$0</p>
         </div>
-        <button id="resetbutton" disabled>RESET</button>
+        <button class="resetbutton" disabled>RESET</button>
       </div>
     </main>
     <script src="./assets/js/script.js"></script>
