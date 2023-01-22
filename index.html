@@ -18,59 +18,59 @@
     </header>
     <main>
       <form>
-        <label for="billamount" class="label">Bill</label>
-        <input type="number" id="billamount" class="largeinput" />
+        <label for="bill-amount" class="label">Bill</label>
+        <input type="number" id="bill-amount" class="large-input bill-amount" />
         <p class="label">Select Tip %</p>
-        <div class="radioscontainer">
-          <input type="radio" id="fivepercent" name="tipradios" value="0.05" />
-          <label for="fivepercent">5%</label>
-          <input type="radio" id="tenpercent" name="tipradios" value="0.1" />
-          <label for="tenpercent">10%</label>
+        <div class="radios-container">
+          <input type="radio" id="five-percent" name="tip-radios" value="0.05" />
+          <label for="five-percent">5%</label>
+          <input type="radio" id="ten-percent" name="tip-radios" value="0.1" />
+          <label for="ten-percent">10%</label>
           <input
             type="radio"
-            id="fifteenpercent"
-            name="tipradios"
+            id="fifteen-percent"
+            name="tip-radios"
             value="0.15"
           />
-          <label for="fifteenpercent">15%</label>
+          <label for="fifteen-percent">15%</label>
           <input
             type="radio"
-            id="twentyfivepercent"
-            name="tipradios"
+            id="twenty-five-percent"
+            name="tip-radios"
             value="0.25"
           />
-          <label for="twentyfivepercent">25%</label>
-          <input type="radio" id="fiftypercent" name="tipradios" value="0.5" />
-          <label for="fiftypercent">50%</label>
-          <input type="number" placeholder="Custom" class="customamountinput" />
+          <label for="twenty-five-percent">25%</label>
+          <input type="radio" id="fifty-percent" name="tip-radios" value="0.5" />
+          <label for="fifty-percent">50%</label>
+          <input type="number" placeholder="Custom" class="custom-amount-input" />
         </div>
-        <div class="peoplelabel">
+        <div class="people-label">
           <p class="label">Number of People</p>
-          <p class="zeroerror">Can't be zero<p>
+          <p class="zero-error">Can't be zero<p>
           </div>
         <input
           type="number"
           placeholder="0"
-          id="numberofpeople"
-          class="largeinput"
+          id="number-of-people"
+          class="large-input number-of-people"
         />
       </form>
-      <div class="totalscontainer">
+      <div class="totals-container">
         <div>
           <div>
             <h2>Tip Amount</h2>
             <h3>/person</h3>
           </div>
-          <p class="totalclass tipamount">$0</p>
+          <p class="total-class tip-amount">$0</p>
         </div>
         <div>
           <div>
             <h2>Total</h2>
             <h3>/person</h3>
           </div>
-          <p class="totalclass totalamount">$0</p>
+          <p class="total-class total-amount">$0</p>
         </div>
-        <button class="resetbutton" disabled>RESET</button>
+        <button class="reset-button" disabled>RESET</button>
       </div>
     </main>
     <script src="./assets/js/script.js"></script>

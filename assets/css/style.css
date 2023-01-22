@@ -49,10 +49,13 @@ form {
 }
 
 input[type="number"] {
+  color: #00474b;
+  font-size: 1.5rem;
+  text-align: right;
   background: #f3f9fa;
   border-radius: 5px;
+  font-family: "Space Mono", monospace;
   height: 3rem;
-  border: 2px solid #f3f9fa;
 }
 
 input[type="number"]:hover {
@@ -64,47 +67,39 @@ input[type="number"]:focus {
   border: 2px solid #26c2ae;
 }
 
-.largeinput {
+.large-input {
+  border: 2px solid #f3f9fa;
   padding: 1rem 1.1rem;
-  text-align: right;
   margin-bottom: 2rem;
   margin-top: 0.4rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  color: #00474b;
-  font-weight: 700;
-  font-family: "Space Mono", monospace;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 1.3rem;
 }
 
-#billamount {
+.bill-amount {
   background-image: url("../images/icon-dollar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: 1.3rem;
 }
 
-#numberofpeople {
+.number-of-people {
   background-image: url("../images/icon-person.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-x: 1.3rem;
 }
 
-.peoplelabel {
+.people-label {
   display: flex;
   justify-content: space-between;
 }
 
-.zeroerror {
+.zero-error {
   color: #e17457;
   display: none;
 }
 
 .zero {
-  border: 2px solid #e17052 !important;
+  border: 2px solid #e17052;
 }
 
-.radioscontainer {
+.radios-container {
   margin-bottom: 2rem;
   margin-top: 1rem;
   display: grid;
@@ -118,20 +113,17 @@ input[type="radio"] {
   display: none;
 }
 
-.radioscontainer label {
+.radios-container label {
   background: #00474b;
   border-radius: 5px;
-  font-weight: 700;
   font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: center;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.radioscontainer label:hover {
+.radios-container label:hover {
   cursor: pointer;
   background: #9fe8df;
   color: #00474b;
@@ -142,36 +134,31 @@ input[type="radio"]:checked + label {
   color: #00474b;
 }
 
-.customamountinput {
-  width: 9.125rem;
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-family: "Space Mono", monospace;
-  text-align: right;
-  color: #00474b;
+.custom-amount-input {
+  width: 9rem;
   padding: 0.4rem 1.1rem 0.4rem 0;
+  border: 2px solid #f3f9fa;
 }
 
-.customamountinput::placeholder {
+.custom-amount-input::placeholder {
   color: #547878;
 }
 
-.customamountinput::-webkit-input-placeholder {
+.custom-amount-input::-webkit-input-placeholder {
   text-align: right;
 }
 
-.customamountinput:-moz-placeholder {
+.custom-amount-input:-moz-placeholder {
   text-align: right;
 }
 
-.totalscontainer {
+.totals-container {
   background: #00474b;
   border-radius: 15px;
   padding: 2rem 1.4rem 1.5rem 1.5rem;
 }
 
-.totalscontainer > div {
+.totals-container > div {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.3rem;
@@ -187,19 +174,15 @@ h3 {
   color: #7f9d9f;
 }
 
-.totalclass {
-  font-weight: 700;
+.total-class {
   font-size: 2rem;
-  line-height: 3rem;
   text-align: right;
   letter-spacing: -0.1rem;
   color: #26c2ae;
 }
 
 button {
-  font-weight: 700;
   font-size: 1.3rem;
-  line-height: 1.9rem;
   text-align: center;
   color: #00474b;
   background: #26c2ae;
@@ -246,59 +229,57 @@ button:disabled {
     justify-content: space-between;
   }
 
-  .largeinput {
+  .large-input {
     margin:0;
   }
 
-  .largeinput:first-of-type {
+  .large-input:first-of-type {
     margin-bottom:2.5rem;
   }
 
-  .radioscontainer {
+  .radios-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0.9rem;
     margin-bottom:2.5rem;
   }
 
-  .customamountinput {
+  .custom-amount-input {
     width: 7rem;
     padding-left: 0.8rem;
     padding-right: 0.9rem;
   }
 
-  .customamountinput::-webkit-input-placeholder {
+  .custom-amount-input::-webkit-input-placeholder {
     text-align: center;
   }
 
-  .customamountinput:-moz-placeholder {
+  .custom-amount-input:-moz-placeholder {
     text-align: center;
   }
 
-  .totalscontainer {
+  .totals-container {
     padding: 2.5rem;
     width: 50%;
   }
 
-  .totalscontainer > div {
+  .totals-container > div {
     margin:0;
     margin-bottom:1.6rem;
   }
 
-  .totalscontainer div div {
+  .totals-container div div {
     display:flex;
     flex-direction:column ;
     justify-content: center;
   }
 
-  .totalclass {
+  .total-class {
     font-size: 3rem;
-    line-height: 4rem;
     letter-spacing: -0.01rem;
   }
 
   button {
-    justify-self: flex-end;
     margin: 0;
     margin-top:6rem;
     height:3rem;

@@ -2,17 +2,17 @@ let tippercentage = 0;
 let billamount = 0;
 let numberofpeople = 0;
 
-let billamountinput = document.querySelector("#billamount");
-let numberofpeopleinput = document.querySelector("#numberofpeople");
+let billamountinput = document.querySelector("#bill-amount");
+let numberofpeopleinput = document.querySelector("#number-of-people");
 let radios = document.querySelectorAll("input[type=radio]");
-let customamountinput = document.querySelector(".customamountinput");
+let customamountinput = document.querySelector(".custom-amount-input");
 
-let tipamountoutput = document.querySelector(".tipamount");
-let totalamountoutput = document.querySelector(".totalamount");
+let tipamountoutput = document.querySelector(".tip-amount");
+let totalamountoutput = document.querySelector(".total-amount");
 
-let zeroerrormsg = document.querySelector(".zeroerror");
+let zeroerrormsg = document.querySelector(".zero-error");
 
-let resetbutton = document.querySelector(".resetbutton");
+let resetbutton = document.querySelector(".reset-button");
 
 let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;
