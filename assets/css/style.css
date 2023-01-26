@@ -23,7 +23,7 @@ body {
   gap: 2.5rem;
 }
 
-header {
+.logo {
   margin-top: 3rem;
 }
 
@@ -43,6 +43,8 @@ form {
   flex-direction: column;
   padding: 0 0.5rem;
 }
+
+/* ===========INPUT & LABELS=========== */
 
 .label {
   color: #5e7a7d;
@@ -142,6 +144,7 @@ input[type="radio"]:checked + label {
 
 .custom-amount-input::placeholder {
   color: #547878;
+  font-size:1.3rem;
 }
 
 .custom-amount-input::-webkit-input-placeholder {
@@ -151,6 +154,8 @@ input[type="radio"]:checked + label {
 .custom-amount-input:-moz-placeholder {
   text-align: right;
 }
+
+/* ===========TOTALS/CALCULATION=========== */
 
 .totals-container {
   background: #00474b;
@@ -181,6 +186,8 @@ h3 {
   color: #26c2ae;
 }
 
+/* ===========RESET BUTTON=========== */
+
 button {
   font-size: 1.3rem;
   text-align: center;
@@ -210,7 +217,7 @@ button:disabled {
     gap: 6rem;
   }
 
-  header {
+  .logo {
     margin-top:8.5%;
   }
 

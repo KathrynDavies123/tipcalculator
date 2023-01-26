@@ -14,6 +14,8 @@ let zeroerrormsg = document.querySelector(".zero-error");
 
 let resetbutton = document.querySelector(".reset-button");
 
+// Function to be called each time an input changes
+
 let calculateTotal = () => {
   let tipamount = (billamount * tippercentage) / numberofpeople;
   let totalamount = billamount / numberofpeople + tipamount;
@@ -30,6 +32,8 @@ let calculateTotal = () => {
   }
   resetbutton.disabled = false;
 };
+
+// Event listeners for inputs
 
 billamountinput.addEventListener("input", function () {
   billamount = billamountinput.value;
